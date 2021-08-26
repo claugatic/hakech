@@ -2,10 +2,10 @@
  AGE   371.282 213.919 0 0 221.309
  EQUL 0
  Recr -13.1233
- Parm 0.00430714
+ Parm 73.2253
  F_ballpark 0.276518
 Catch  4.49226e-11 4.9914e-12 4.9914e-12 4.9914e-12 0
- -log(L): 935.509  Spbio: 1.67023e+06 1.26845e+06
+ -log(L): 1008.73  Spbio: 1.67023e+06 1.26845e+06
 
 Year Spbio Recruitment
 Virg 1.70102e+06 303387

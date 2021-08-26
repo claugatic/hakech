@@ -24,7 +24,7 @@ m2 <- 'c:/CEGM/MODEL/merluza/M21/HAKECH/2FOFL/'
 m3 <- 'c:/CEGM/MODEL/merluza/M21/HAKECH/2FOFM/'
 m4 <- 'c:/CEGM/MODEL/merluza/M21/HAKECH/4FSDM/'
 m5 <- 'c:/CEGM/MODEL/merluza/M21/HAKECH/4FSDL/'
-
+m6 <- 'c:/CEGM/MODEL/merluza/M21/HAKECH/4FSDMR/'
 
 
 dc='c:/CEGM/MODEL/merluza/M21/HAKECH/scompara/'
@@ -38,8 +38,10 @@ mo2 <- SS_output(dir=m2)
 mo3 <- SS_output(dir=m3)
 mo4 <- SS_output(dir=m4)
 mo5 <- SS_output(dir=m5)
+mo6 <- SS_output(dir=m6)
 
-mod.sum <- SSsummarize(list(mo1,mo2,mo3,mo4,mo5));#,mod4))#,mod2,mod3,mod4,mod5,mod8
+
+mod.sum <- SSsummarize(list(mo1,mo2,mo3,mo4,mo5,mo6));#,mod4))#,mod2,mod3,mod4,mod5,mod8
 
 
 

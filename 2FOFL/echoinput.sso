@@ -1,7 +1,7 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-Fri Jul 30 11:14:25 2021
+Tue Aug 17 19:43:05 2021
 
 data.dat  datfilename
 control.dat  ctlfilename
@@ -351,7 +351,7 @@ g a seas subseas ALK_idx real_age calen_age lin_grow first_grow_age
 0  Hermaphro_Option 
 1  MGparm_def
  Biology base parameter setup
-1  0.1 0.35 0.12 0.3 0.2 -3 2 0 0 0 0 0 0 0 NatM_p_1_Fem_GP_1
+1  0.1 0.35 0.12 0.3 0.2 3 2 0 0 0 0 0 0 0 NatM_p_1_Fem_GP_1
 2  20 25 30 30 5 0 -2 0 0 0 0 0 0 0 L_at_Amin_Fem_GP_1
 3  60 75 65 65 5 0 -2 0 0 0 0 0 0 0 L_at_Amax_Fem_GP_1
 4  0.1 0.2 0.15 0.25 0.8 0 -3 0 0 0 0 0 0 0 VonBert_K_Fem_GP_1
