@@ -60,7 +60,7 @@
 #
 #_growth_parms
 #LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env_var&link	dev_link	dev_minyr	dev_maxyr	dev_PH	Block	Block_Fxn			
- 0.32 0.37 0.33 0.3 0.2 -3 2 0 0 0 0 0 0 0 # NatM_p_1_Fem_GP_1
+ 0.1 0.35 0.12 0.3 0.2 3 2 0 0 0 0 0 0 0 # NatM_p_1_Fem_GP_1
  20 25 30 30 5 0 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
 60 75 65 65 5 0 -2 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
 # 30 35 37 37 5 0 -4 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
@@ -68,10 +68,8 @@
  0.1 0.2 0.15 0.25 0.8 0 -3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1-4
  0.05 0.2 0.063 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.2 0.085 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
- #0.15 0.25 0.17 0.19 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
- #0.22 0.32 0.25 0.28 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_2_Fem_GP_1
- 1.7e-05 1.9e-05 1.8e-05 1.8e-05 0.5 0 3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
- 2.7 2.8 2.79667 2.75 1 0 3 0 0 0 0 0 0 0 # Wtlen_2_Fem_GP_1
+ 0.15 0.25 0.17 0.19 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
+ 0.22 0.32 0.25 0.28 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_2_Fem_GP_1
  33 40 35 37 0.8 0 -3 0 0 0 0 0 0 0 # Mat50%_Fem_GP_1
  -47 -45 -46.9 -46.9 0.8 0 -3 0 0 0 0 0 0 0 # Mat_slope_Fem_GP_1
  -3 3 1 1 0.8 0 -3 0 0 0 0 0 0 0 # Eggs_scalar_Fem_GP_1
@@ -215,20 +213,31 @@
  12 0 0 0 # 1 FISHERY2
  12 0 0 0 # 1 FISHERY2
  12 0 0 0 # 1 FISHERY2
+# 1   PESQUERIA1 LenSelex
+#10   50  40 1 99  0 -3  0 0 0 0 0 0 0
+#0.1  10  0.1 1 99  0 -3  0 0 0 0 0 0 0
+#-10  999  999  1 99  0 -3  0 0 0 0 0 0 0
+#-10  10  0 0 99  0 -3  0 0 0 0 0 0 0
+# 2 PESQUERIA
+#10   50  40 1 99  0 -3  0 0 0 0 0 0 0
+#0.1  10  0.1 1 99  0 -3  0 0 0 0 0 0 0
+#-10  999  999  1 99  0 -3  0 0 0 0 0 0 0
+#-10  10  0 0 99  0 -3  0 0 0 0 0 0 0
+
+#
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par1_FISHERY1(1)
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par2_FISHERY1(1)
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par1_FISHERY2(1)
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par2_FISHERY2(1)
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par1_FISHERY3(1)
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par2_FISHERY3(1)
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par1_FISHERY4(1)
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Par2_FISHERY4(1)
+          0.01             5       1.47274           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_SURVEY1(2)
+          0.01             5       0.11742           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_SURVEY1(2)
 
 
 #_no timevary selex parameters
-#_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
-          0.01             6       4.19775           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.65156           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
-          0.01             6       4.08692           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
-          0.01             6       1.78365           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
-          0.01             6       4.19775           0.2            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.65156           1.8            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
-          0.01             6       4.08692           0.2            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
-          0.01             6       1.78365           1.8            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
-          0.01             6     0.0246497           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_Crucero(5)
-          0.01             6      0.415929           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_Crucero(5)
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature
 #_no 2D_AR1 selex offset used
