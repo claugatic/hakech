@@ -1,7 +1,7 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-Fri Aug 27 11:45:05 2021
+Wed Sep 15 12:21:49 2021
 
 data.dat  datfilename
 control.dat  ctlfilename
@@ -369,7 +369,7 @@ g a seas subseas ALK_idx real_age calen_age lin_grow first_grow_age
 0  Hermaphro_Option 
 1  MGparm_def
  Biology base parameter setup
-1  0.32 0.37 0.33 0.3 0.2 -3 2 0 0 0 0 0 0 0 NatM_p_1_Fem_GP_1
+1  0.32 0.37 0.33 0.3 0.2 3 -2 0 0 0 0 0 0 0 NatM_p_1_Fem_GP_1
 2  20 25 30 30 5 0 -2 0 0 0 0 0 0 0 L_at_Amin_Fem_GP_1
 3  60 75 65 65 5 0 -2 0 0 0 0 0 0 0 L_at_Amax_Fem_GP_1
 4  0.1 0.2 0.15 0.25 0.8 0 -3 0 0 0 0 0 0 0 VonBert_K_Fem_GP_1
@@ -389,7 +389,7 @@ g a seas subseas ALK_idx real_age calen_age lin_grow first_grow_age
 mgparm_type for each parm: 1=M; 2=growth; 3=wtlen,mat,fec,hermo,sexratio; 4=recr; 5=migr; 6=ageerror; 7=catchmult 
  1 2 2 2 2 2 3 3 3 3 3 3 4 4 4 2 3
 Now read env, block/trend, and dev adjustments to MGparms 
-MG_active  2 1 0 1 0 0 0 0
+MG_active  1 0 0 1 0 0 0 0
 timevary_MG 
  0 0 0 0 0 0 0 0
  0 0 0 0 0 0 0 0
@@ -619,18 +619,18 @@ N parameters: 95
 Parameters plus derived quant: 332
 Adjust the phases 
  requested turn_off phase: 10
-ParCount 95   Active parameters: 54
+ParCount 95   Active parameters: 53
 Turn_off_phase 10
  max_phase 4
 332
-parm 95 covar 54
-parm 136 covar 95
-parm 177 covar 136
-parm 216 covar 175
-parm 255 covar 214
-parm 293 covar 252
-parm 309 covar 268
-Active parameters plus derived quantities:  291
+parm 95 covar 53
+parm 136 covar 94
+parm 177 covar 135
+parm 216 covar 174
+parm 255 covar 213
+parm 293 covar 251
+parm 309 covar 267
+Active parameters plus derived quantities:  290
  N_WTage_rd 0
 now in PARAMETER_SECTION 
  now dimension the selectivity arrays 18
@@ -803,7 +803,6 @@ base selparm 1.78365
 8 timevary_parm: 0
 block pattern 2
 result by year:  1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365 1.78365
-Natmort seas:1 sex:1 Gpat:1 sex*Gpat:1 settlement:1 gpi:1 M:  0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33
 wtlen2 
  0.0147131 0.0234749 0.0350277 0.0497087 0.067846 0.0897601 0.115765 0.146167 0.181269 0.221369 0.266759 0.317728 0.37456 0.437537 0.506938 0.583038 0.666108 0.756419 0.854237 0.959827 1.07345 1.19537 1.32584 1.46513 1.61347 1.77113 1.93836 2.1154 2.30251 2.49992 2.70789 2.92666 3.15646 3.39754 3.65014 3.91449 4.19084 4.47941
 wtlen2^2  0.000216475 0.000551073 0.00122694 0.00247095 0.00460308 0.00805688 0.0134014 0.0213648 0.0328586 0.0490043 0.0711603 0.100951 0.140295 0.191439 0.256987 0.339933 0.4437 0.572169 0.729721 0.921269 1.1523 1.42891 1.75786 2.14659 2.60329 3.13691 3.75724 4.47493 5.30154 6.24961 7.33267 8.56531 9.96323 11.5433 13.3235 15.3232 17.5631 20.0651
